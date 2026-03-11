@@ -1,0 +1,44 @@
+1. console.log("Node.js działa"); // Wyświetla tekst w konsoli Node.js
+2. node server.js // Uruchamia plik server.js w środowisku Node.js
+3. node -v // Wyświetla wersję Node.js zainstalowaną w systemie
+4. console.log("Jan Kowalski"); // Wyświetla imię i nazwisko ucznia w konsoli
+5. npm init -y // Tworzy plik package.json bez zadawania pytań
+6. package.json // Plik konfiguracyjny projektu Node.js
+7. node_modules // Folder zawierający wszystkie zainstalowane pakiety
+8. npm install express // Instaluje framework Express
+9. npm uninstall express // Usuwa pakiet Express z projektu
+10. npx nodemon app.js // Uruchamia aplikację z automatycznym restartem po zmianie plików
+
+11. const http=require("http"); http.createServer((req,res)=>res.end("Serwer działa")).listen(3000); // Tworzy serwer HTTP na porcie 3000
+12. http://localhost:3000 // Lokalny adres do sprawdzania działania serwera w przeglądarce
+13. res.writeHead(200,{"Content-Type":"text/plain"}); // Ustawia nagłówek odpowiedzi na zwykły tekst
+14. server.listen(8080); // Uruchamia serwer na porcie 8080
+15. http://localhost:3000 // Adres URL do testowania serwera lokalnie
+16. require("http"); // Import wbudowanego modułu HTTP
+17. Ctrl + C // Zatrzymuje działający serwer w terminalu
+18. res.end("Odpowiedź serwera"); // Wysyła odpowiedź do przeglądarki
+19. res.end(); // Kończy odpowiedź HTTP
+20. server.listen(3000); // Uruchamia serwer i nasłuchuje na porcie
+
+21. npm install express // Instaluje framework Express
+22. const express=require("express"); const app=express(); // Tworzy aplikację Express
+23. app.get("/",(req,res)=>{}); // Obsługuje trasę strony głównej
+24. app.get("/",(req,res)=>res.send("Strona główna")); // Wyświetla tekst na stronie głównej
+25. app.listen(3000); // Uruchamia serwer Express na porcie 3000
+26. GET // Metoda HTTP używana do pobierania strony
+27. app.get("/start",(req,res)=>{}); // Obsługuje trasę /start
+28. res.send(); // Wysyła odpowiedź z serwera Express do klienta
+29. app.js // Plik w którym zwykle znajduje się kod aplikacji Express
+30. HTTP to moduł Node.js, a Express to framework upraszczający tworzenie serwera // Różnica między HTTP a Express
+
+31. function odejmij(a,b){return a-b;} // Funkcja odejmowania w module math.js
+32. module.exports=odejmij; // Eksportuje funkcję z modułu
+33. const odejmij=require("./math"); // Importuje moduł lokalny do app.js
+34. require("./math"); // Poprawny zapis importu lokalnego modułu
+35. require("math"); // Błąd: brak ./ oznaczającego plik lokalny
+
+36. const fs=require("fs"); fs.writeFileSync("test.txt","INF.04"); // Zapisuje tekst do pliku
+37. fs.readFileSync("test.txt","utf8"); // Odczytuje zawartość pliku tekstowego
+38. require("fs"); // Import modułu do obsługi plików
+39. fs.writeFileSync(); // Funkcja zapisująca dane do pliku
+40. fs.readFileSync(); // Funkcja odczytująca dane z pliku
